@@ -1,4 +1,4 @@
-import { Tv, Film, Headphones, Zap } from "lucide-react";
+import { Tv, Film, Headphones, Zap, Trophy, Globe } from "lucide-react";
 
 const benefits = [
   {
@@ -7,9 +7,19 @@ const benefits = [
     description: "Assista seus conteúdos favoritos com a melhor qualidade de imagem disponível no mercado."
   },
   {
+    icon: Trophy,
+    title: "Futebol ao vivo",
+    description: "Todos os jogos do Brasileirão, Libertadores, Champions League e campeonatos internacionais."
+  },
+  {
+    icon: Globe,
+    title: "Esportes variados",
+    description: "UFC, NBA, NFL, Fórmula 1, vôlei, tênis e muito mais. Acompanhe seus esportes favoritos ao vivo."
+  },
+  {
     icon: Film,
-    title: "Filmes e séries atualizados",
-    description: "Acesso a um vasto catálogo sempre atualizado com os últimos lançamentos."
+    title: "Catálogo completo",
+    description: "Filmes, séries, novelas, desenhos infantis e documentários sempre atualizados."
   },
   {
     icon: Headphones,
@@ -36,7 +46,7 @@ const Benefits = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
             <div
               key={index}

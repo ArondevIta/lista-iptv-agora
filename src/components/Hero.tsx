@@ -24,7 +24,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
-              Filmes, séries e canais ao vivo liberados em instantes.
+              Filmes, séries, canais ao vivo, futebol brasileiro e internacional, e muito mais liberados em instantes.
             </p>
             
             <Button 
@@ -51,10 +51,13 @@ const Hero = () => {
               {[
                 { label: "HD", gradient: "from-primary/80 to-primary/60" },
                 { label: "4K", gradient: "from-primary/70 to-primary/50" },
-                { label: "LIVE", gradient: "from-primary/60 to-primary/40" },
+                { label: "FUTEBOL", gradient: "from-primary/60 to-primary/40" },
                 { label: "SPORT", gradient: "from-primary/80 to-primary/60" },
-                { label: "NEWS", gradient: "from-primary/70 to-primary/50" },
-                { label: "MOVIE", gradient: "from-primary/60 to-primary/40" },
+                { label: "SERIES", gradient: "from-primary/70 to-primary/50" },
+                { label: "FILMES", gradient: "from-primary/60 to-primary/40" },
+                { label: "LIVE TV", gradient: "from-primary/80 to-primary/60" },
+                { label: "INFANTIL", gradient: "from-primary/70 to-primary/50" },
+                { label: "NOVELAS", gradient: "from-primary/60 to-primary/40" },
               ].map((item, index) => (
                 <div
                   key={index}
